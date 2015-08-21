@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/scroll_view">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="发薪日"/>
+
+        <EditText
+            android:id="@+id/pay_day"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_border"
+            android:padding="@dimen/edit_text_padding"
+            android:hint="请输入1-31日"
+            android:inputType="phone"
+            android:maxLength="2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="工资卡号"/>
+
+        <EditText
+            android:id="@+id/card_no"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_border"
+            android:padding="@dimen/edit_text_padding"
+            android:inputType="phone"
+            android:maxLength="30"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="查询密码"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_border"
+            android:padding="@dimen/edit_text_padding"
+            android:inputType="textPassword"
+            android:maxLength="15"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/submit_one"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:layout_marginBottom="@dimen/scroll_view_submit_button_layout_margin_bottom"
+        android:text="完成"
+        style="@style/CustomTextViewButton"/>
+    </LinearLayout>
+
+</ScrollView>

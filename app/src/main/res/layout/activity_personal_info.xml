@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context="com.wezebra.zebraking.ui.myaccount.PersonalInfoActivity">
+
+    <RelativeLayout
+        android:id="@+id/personal_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/account_item">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/font_large"
+            android:text="@string/personal_data"/>
+
+        <ImageView
+            android:id="@id/action_next_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_action_next_item_dark"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/personal_third_party"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        style="@style/account_item">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/font_large"
+            android:text="@string/third_party_account"/>
+
+        <ImageView
+            android:id="@id/action_next_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_action_next_item_dark"/>
+
+        <TextView
+            android:layout_toLeftOf="@id/action_next_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_large"
+            android:textColor="@color/text_light"
+            android:layout_centerVertical="true"
+            android:text="@string/account_opened"/>
+    </RelativeLayout>
+
+    <include
+        layout="@layout/empty_divider_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/personal_bank_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        style="@style/account_item">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/font_large"
+            android:text="@string/my_bank_card"/>
+
+        <ImageView
+            android:id="@id/action_next_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_action_next_item_dark"/>
+
+        <TextView
+            android:id="@+id/personal_have_card"
+            android:layout_toLeftOf="@id/action_next_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_large"
+            android:textColor="@color/text_light"
+            android:layout_centerVertical="true"
+            android:text="@string/bank_not_attach"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/personal_password_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/account_item">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/font_large"
+            android:text="@string/password_reset"/>
+
+        <ImageView
+            android:id="@id/action_next_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_action_next_item_dark"/>
+    </RelativeLayout>
+
+    <include
+        layout="@layout/empty_divider_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/change_bind_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/account_item">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/font_large"
+            android:text="@string/change_bind_phone"/>
+
+        <ImageView
+            android:id="@id/action_next_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_action_next_item_dark"/>
+    </RelativeLayout>
+
+    <include
+        layout="@layout/empty_divider_layout"/>
+
+    <TextView
+        android:id="@+id/personal_sign_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:gravity="center"
+        android:background="@drawable/bottom_border_bg"
+        android:textSize="@dimen/font_large"
+        android:text="@string/sign_out"/>
+
+
+</LinearLayout>

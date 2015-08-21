@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <include layout="@layout/upload_layout"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left">
+
+                <ImageView
+                    android:id="@+id/exam_one"
+                    android:layout_width="@dimen/exam_dimen_small"
+                    android:layout_height="@dimen/exam_dimen_small"
+                    android:layout_gravity="center"
+                    android:background="@drawable/exam_paf"
+                    android:src="@color/half_transparent"/>
+
+                <TextView
+                    android:layout_width="@dimen/exam_dimen_small"
+                    android:layout_height="@dimen/exam_dimen_small"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="示例\n劳动合同"
+                    android:textSize="@dimen/font_small"
+                    android:textColor="@color/text_light"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/upload_margin_left">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left">
+
+                <ImageView
+                    android:id="@+id/exam_two"
+                    android:layout_width="@dimen/exam_dimen_small"
+                    android:layout_height="@dimen/exam_dimen_small"
+                    android:layout_gravity="center"
+                    android:background="@drawable/exam_paf"
+                    android:src="@color/half_transparent"/>
+
+                <TextView
+                    android:layout_width="@dimen/exam_dimen_small"
+                    android:layout_height="@dimen/exam_dimen_small"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="示例\n工卡照片"
+                    android:textSize="@dimen/font_small"
+                    android:textColor="@color/text_light"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/upload_margin_left">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left">
+
+                <ImageView
+                    android:id="@+id/exam_three"
+                    android:layout_width="@dimen/exam_dimen_small"
+                    android:layout_height="@dimen/exam_dimen_small"
+                    android:layout_gravity="center"
+                    android:background="@drawable/exam_paf"
+                    android:src="@color/half_transparent"/>
+
+                <TextView
+                    android:layout_width="@dimen/exam_dimen_small"
+                    android:layout_height="@dimen/exam_dimen_small"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="示例\n工作证明"
+                    android:textSize="@dimen/font_small"
+                    android:textColor="@color/text_light"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:text="斑马王国的要求："
+        android:textSize="@dimen/wenan_font_size"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_example_text"
+        android:text="1.可以上传“劳动合同”、“工卡照片”或“工作证明”完成工作认证，任选其一即可"
+        android:textSize="@dimen/wenan_font_size"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_example_text"
+        android:text="2.劳动合同照片，必须包含劳动合同签订双方的名称和合同期限，必须包含公司公章和本人签字页"
+        android:textSize="@dimen/wenan_font_size"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_example_text"
+        android:text="3.工卡照，必须有本人照片和公司名称、职务等信息"
+        android:textSize="@dimen/wenan_font_size"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_example_text"
+        android:text="4.工作证明，须有公司盖章，开具日期在3个工作日内"
+        android:textSize="@dimen/wenan_font_size"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_example_text"
+        android:text="5.图片清晰，不能使用美图软件等图片编辑软件编辑"
+        android:textSize="@dimen/wenan_font_size"/>
+
+    <TextView
+        android:id="@+id/submit_two"
+        android:layout_marginTop="@dimen/submit_button_margin_top"
+        android:text="完成"
+        style="@style/CustomTextViewButton"
+        android:layout_marginBottom="@dimen/scroll_view_submit_button_layout_margin_bottom"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

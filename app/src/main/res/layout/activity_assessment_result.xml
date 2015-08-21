@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/layout_margin_top_per_step"
+    tools:context="com.wezebra.zebraking.ui.installment.SIAStepTwoResultActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/bq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:layout_marginBottom="@dimen/layout_margin_top_per_step"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bq_passed"/>
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="恭喜您通过资质评估\n赶快完善信息提交申请吧"
+        android:textSize="@dimen/font_normal"
+        android:textColor="@color/text_light"/>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:text="完善信息"
+        style="@style/CustomTextViewButton"/>
+
+</LinearLayout>

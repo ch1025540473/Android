@@ -1,0 +1,378 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wezebra.zebraking.ui.installment.JobInfoActivity"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:padding="@dimen/tips_padding"
+            android:background="@drawable/application_tips_border"
+            android:text=""
+            android:textSize="@dimen/font_normal"
+            android:textColor="@color/text_red"
+            android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:orientation="horizontal">
+        
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="公司类型"
+            android:textSize="@dimen/font_normal"/>
+
+        <Spinner
+            android:id="@+id/company_type"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_border"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="所在部门"
+            android:textSize="@dimen/font_normal"/>
+
+        <EditText
+            android:id="@+id/department"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_weight="1"
+            android:padding="@dimen/edit_text_padding"
+            android:background="@drawable/edit_text_border"
+            android:maxLength="50"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="公司座机"
+            android:textSize="@dimen/font_normal"/>
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_weight="1"
+            android:padding="@dimen/edit_text_padding"
+            android:background="@drawable/edit_text_border"
+            android:inputType="phone"
+            android:hint="如：02869864786"
+            android:maxLength="15"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="公司详址"
+            android:textSize="@dimen/font_normal"/>
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_weight="1"
+            android:padding="@dimen/edit_text_padding"
+            android:background="@drawable/edit_text_border"
+            android:maxLength="64"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/upload_layout"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/upload_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        <ImageView
+            android:id="@+id/photo_one"
+            android:layout_width="@dimen/exam_dimen_large"
+            android:layout_height="@dimen/exam_dimen_large"
+            android:layout_gravity="left"
+            android:background="@drawable/example_border_large"
+            android:src="@drawable/camera_large"
+            android:scaleType="center"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/upload_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone">
+        <ImageView
+            android:id="@+id/photo_two"
+            android:layout_width="@dimen/exam_dimen_large"
+            android:layout_height="@dimen/exam_dimen_large"
+            android:layout_gravity="center"
+            android:background="@drawable/example_border_large"
+            android:src="@drawable/camera_large"
+            android:scaleType="center"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/add_one_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/exam_dimen_large"
+                    android:layout_height="@dimen/exam_dimen_large"
+                    android:layout_gravity="left"
+                    android:background="@drawable/example_border_large"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="添加照片"
+                    android:textSize="@dimen/font_small"
+                    android:textColor="@color/text_light"
+                    android:drawableTop="@drawable/add"/>
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/upload_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible">
+        <ImageView
+            android:id="@+id/photo_three"
+            android:layout_width="@dimen/exam_dimen_large"
+            android:layout_height="@dimen/exam_dimen_large"
+            android:layout_gravity="right"
+            android:background="@drawable/example_border_large"
+            android:src="@drawable/camera_large"
+            android:scaleType="center"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
+
+            <ImageView
+                android:id="@+id/exam_one"
+                android:layout_width="@dimen/exam_dimen_small"
+                android:layout_height="@dimen/exam_dimen_small"
+                android:layout_gravity="center"
+                android:background="@drawable/job_info_one"
+                android:src="@color/half_transparent"/>
+
+            <TextView
+                android:layout_width="@dimen/exam_dimen_small"
+                android:layout_height="@dimen/exam_dimen_small"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="示例\n劳动合同"
+                android:textSize="@dimen/font_small"
+                android:textColor="@color/text_light"/>
+
+        </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/upload_margin_left"
+            android:gravity="center">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/exam_two"
+                android:layout_width="@dimen/exam_dimen_small"
+                android:layout_height="@dimen/exam_dimen_small"
+                android:layout_gravity="center"
+                android:background="@drawable/job_info_two"
+                android:src="@color/half_transparent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="示例\n工卡照片"
+                android:textSize="@dimen/font_small"
+                android:textColor="@color/text_light"/>
+
+        </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/upload_margin_left"
+            android:gravity="right">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:id="@+id/exam_three"
+                android:layout_width="@dimen/exam_dimen_small"
+                android:layout_height="@dimen/exam_dimen_small"
+                android:layout_gravity="center"
+                android:background="@drawable/job_info_three"
+                android:src="@color/half_transparent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="示例\n工作证明"
+                android:textSize="@dimen/font_small"
+                android:textColor="@color/text_light"/>
+
+        </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_top_per_step"
+            android:text="斑马王国的要求："
+            android:textSize="@dimen/font_normal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_top_about_example_text"
+            android:textSize="@dimen/font_normal"
+            android:text="1.可以上传“劳动合同”、“工卡照片”或“工作证明”完成工作认证"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_top_about_example_text"
+            android:textSize="@dimen/font_normal"
+            android:text="2.劳动合同照片，必须包含劳动合同签订双方的名称和合同期限，必须包含公司盖章和本人签字页"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_top_about_example_text"
+            android:textSize="@dimen/font_normal"
+            android:text="3.工卡照，必须有本人照片和公司名称、职务等信息"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_top_about_example_text"
+            android:textSize="@dimen/font_normal"
+            android:text="4.工作证明，须有公司盖章，开具日期在3个工作日内"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_top_about_example_text"
+            android:textSize="@dimen/font_normal"
+            android:text="5.图片清晰，不能使用美图软件等图片编辑软件编辑"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_marginTop="@dimen/layout_margin_top_large"
+            android:text="完成"
+            style="@style/CustomTextViewButton"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/scroll_view_submit_button_layout_margin_bottom"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

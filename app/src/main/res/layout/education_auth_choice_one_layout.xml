@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="学信账号"/>
+
+        <EditText
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_border"
+            android:padding="@dimen/edit_text_padding"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="查询密码"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_border"
+            android:padding="@dimen/edit_text_padding"
+            android:inputType="textPassword"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/submit_one"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:text="完成"
+        style="@style/CustomTextViewButton"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:layout_marginBottom="@dimen/scroll_view_submit_button_layout_margin_bottom"
+        android:text="您可能于在校期间，或报考职业考试，研究生考试时注册过学信网账号，如已注册请填写您的学信账号和密码，如未注册可登陆学信网进行注册，注册成功后再填写认证"
+        android:textSize="@dimen/font_normal"
+        android:textColor="@color/text_light"/>
+
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

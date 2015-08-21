@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="缴纳城市"/>
+
+        <TextView
+            android:id="@+id/attribution"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_border"
+            android:padding="@dimen/edit_text_padding"
+            android:text="--请选择--"
+            android:textSize="@dimen/font_normal"
+            android:textColor="@color/text_light"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="自缴金额"/>
+
+        <Spinner
+            android:id="@+id/self_pay_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_border"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="公积金号"/>
+
+        <EditText
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_border"
+            android:padding="@dimen/edit_text_padding"
+            android:hint="请填写公积金账号"
+            android:inputType="textPassword"
+            android:maxLength="64"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="查询密码"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_border"
+            android:padding="@dimen/edit_text_padding"
+            android:inputType="textPassword"
+            android:maxLength="15"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/submit_one"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:text="完成"
+        style="@style/CustomTextViewButton"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:layout_marginBottom="@dimen/scroll_view_submit_button_layout_margin_bottom"
+        android:text="账号需能在当地公积金查询网站登录查询"
+        android:textSize="@dimen/font_normal"
+        android:textColor="@color/text_light"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/layout_margin_top_per_step"
+    tools:context="com.wezebra.zebraking.ui.installment.SIAStepTwoResultActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/bq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:layout_marginBottom="@dimen/layout_margin_top_per_step"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bq_unpassed"/>
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:text="很抱歉，没有通过评估哟，\n斑马菌只能帮你到这儿了"
+        android:textSize="@dimen/font_normal"
+        android:textColor="@color/text_light"/>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:text="我知道了"
+        style="@style/CustomTextViewButton"/>
+
+</LinearLayout>

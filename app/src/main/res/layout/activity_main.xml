@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity"
+                android:orientation="vertical"
+                tools:ignore="MergeRootFrame">
+
+    <com.wezebra.zebraking.widget.CustomViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey"/>
+
+    <RadioGroup
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tab1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="房租分期"
+            android:textSize="@dimen/font_small"
+            android:textColor="@color/selector_main_radio_text_color"
+            android:gravity="center"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_ic_rent_stage"
+            android:padding="7dp"/>
+
+        <RadioButton
+            android:id="@+id/tab2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="我的账户"
+            android:textSize="@dimen/font_small"
+            android:textColor="@color/selector_main_radio_text_color"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_ic_account"
+            android:padding="7dp"/>
+    </RadioGroup>
+</LinearLayout>

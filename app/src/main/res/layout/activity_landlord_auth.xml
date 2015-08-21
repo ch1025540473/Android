@@ -1,0 +1,231 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.wezebra.zebraking.ui.installment.LandlordAuthActivity"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/application_tips_border"
+            android:padding="@dimen/tips_padding"
+            android:text=""
+            android:textSize="@dimen/font_normal"
+            android:textColor="@color/text_red"
+            android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:text="请按要求填写以下信息"
+        android:textSize="@dimen/font_normal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="月租金"
+            android:textSize="@dimen/font_normal"/>
+
+        <EditText
+            android:id="@+id/rent_fee_monthly"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:background="@drawable/edit_text_border"
+            android:layout_weight="1"
+            android:inputType="phone"
+            android:hint="请填写月租金，如1000"
+            android:maxLength="5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="交租方式"
+            android:textSize="@dimen/font_normal"/>
+
+        <Spinner
+            android:id="@+id/how_to_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:background="@drawable/edit_text_border"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:gravity="center"
+        android:text="房东信息"
+        android:textSize="@dimen/font_normal"
+        android:drawableLeft="@drawable/dot_line"
+        android:drawableRight="@drawable/dot_line"
+        android:padding="@dimen/tips_padding"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_top_per_step">
+
+            <TextView
+                android:layout_width="@dimen/edit_text_title_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="房东姓名"
+                android:textSize="@dimen/font_normal"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_text_height"
+                android:background="@drawable/edit_text_border"
+                android:layout_weight="1"
+                android:maxLength="10"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="银行账号"
+            android:textSize="@dimen/font_normal"/>
+
+        <EditText
+            android:id="@+id/card_num"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:background="@drawable/edit_text_border"
+            android:layout_weight="1"
+            android:inputType="phone"
+            android:maxLength="30"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="银行所在地"
+            android:textSize="@dimen/font_normal"/>
+
+        <TextView
+            android:id="@+id/attribution"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:padding="@dimen/edit_text_padding"
+            android:background="@drawable/edit_text_border"
+            android:layout_weight="1"
+            android:text="--请选择--"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/font_normal"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_top_about_input_item"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/edit_text_title_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="支行名称"
+                android:textSize="@dimen/font_normal"/>
+
+            <EditText
+                android:id="@+id/branch_bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_text_height"
+                android:background="@drawable/edit_text_border"
+                android:ellipsize="end"
+                android:text=""
+                android:layout_weight="1"
+                android:maxLength="30"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="房东手机号"
+            android:textSize="@dimen/font_normal"/>
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:background="@drawable/edit_text_border"
+            android:layout_weight="1"
+            android:inputType="phone"
+            android:maxLength="11"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_marginTop="@dimen/layout_margin_top_large"
+        android:layout_marginBottom="@dimen/scroll_view_submit_button_layout_margin_bottom"
+        android:text="完成"
+        style="@style/CustomTextViewButton"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

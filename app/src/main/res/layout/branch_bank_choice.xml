@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_green_bg"
+    android:padding="16dp"
+    >
+    <EditText
+        android:id="@+id/search_bank"
+        android:layout_width="280dp"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_weight="1"
+        android:hint="请输入支行关键字进行选择"
+        android:textColor="@color/grey"
+        android:background="@drawable/edit_text_border_two"
+        />
+    <TextView
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_toRightOf="@id/search_bank"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/font_large"
+        android:layout_marginLeft="6dp"
+        android:id="@+id/choice_ok"
+        android:text="确定"/>
+
+</RelativeLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:id="@+id/not_data_info">
+    <TextView
+        android:id="@+id/not_data_info_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="暂无搜索数据"
+        android:textColor="@color/grey"
+        android:padding="20dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"/>
+</FrameLayout>
+
+</LinearLayout>

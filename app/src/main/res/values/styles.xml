@@ -1,0 +1,107 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:windowBackground">@color/window_bg</item>
+        <item name="android:editTextStyle">@style/CustomEditText</item>
+        <item name="android:spinnerStyle">@style/CustomSpinner</item>
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="actionModeBackground">@color/primaryColor</item>
+
+    </style>
+
+    <style name="NoTitle" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+    </style>
+
+
+    <style name="CustomDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="account_item">
+        <item name="android:background">@drawable/bottom_border_bg</item>
+        <item name="android:paddingLeft">@dimen/padding_left_account_item</item>
+        <item name="android:paddingTop">@dimen/padding_top_account_item</item>
+        <item name="android:paddingRight">@dimen/padding_right_account_item</item>
+        <item name="android:paddingBottom">@dimen/padding_bottom_account_item</item>
+    </style>
+
+    <style name="custom_edit_layout">
+        <item name="android:background">@drawable/bottom_border_bg</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingRight">14dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="account_item_title">
+        <item name="android:background">@drawable/bottom_border_pressed</item>
+        <item name="android:paddingLeft">@dimen/padding_left_account_item</item>
+        <item name="android:paddingTop">@dimen/padding_top_account_item</item>
+        <item name="android:textColor">@color/text_light</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@color/half_transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="CustomEditText" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor</item>
+        <item name="android:padding">@dimen/edit_text_padding</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/text_light</item>
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="CustomSpinner" parent="Base.Widget.AppCompat.Spinner">
+        <item name="android:spinnerMode">dialog</item>
+    </style>
+
+    <style name="CustomTextViewButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_large</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_green_bg</item>
+        <item name="android:padding">@dimen/button_text_padding</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:textColorPrimary">@color/text_dark</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+    <item name="android:bottomBright">@color/transparent</item>
+    <item name="android:bottomDark">@color/transparent</item>
+    <item name="android:bottomMedium">@color/transparent</item>
+    <item name="android:centerBright">@color/transparent</item>
+    <item name="android:centerDark">@color/transparent</item>
+    <item name="android:centerMedium">@color/transparent</item>
+    <item name="android:fullBright">@color/transparent</item>
+    <item name="android:fullDark">@color/transparent</item>
+    <item name="android:topBright">@color/transparent</item>
+    <item name="android:topDark">@color/transparent</item>
+    </style>
+
+</resources>

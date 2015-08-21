@@ -1,0 +1,16 @@
+<com.wezebra.zebraking.widget.BGABanner
+    android:id="@+id/banner"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:banner_pointContainerBackground="@android:color/transparent"
+    app:banner_pointContainerHeight="60dp"
+    app:banner_pointContainerWidth="match_parent"
+    app:banner_pointEdgeSpacing="10dp"
+    app:banner_pointFocusedImg="@drawable/point_focused"
+    app:banner_pointGravity="bottom|center_horizontal"
+    app:banner_pointSpacing="5dp"
+    app:banner_pointUnfocusedImg="@drawable/point_unfocused"
+    app:banner_pointVisibility="true"/>
+

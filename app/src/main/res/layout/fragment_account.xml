@@ -1,0 +1,289 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.wezebra.zebraking.ui.fragment.AccountFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context="com.wezebra.zebraking.ui.fragment.AccountFragment">
+
+            <RelativeLayout
+                android:id="@+id/account_personal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/wave_bg"
+                android:paddingBottom="@dimen/padding_bottom_account_item"
+                android:paddingLeft="@dimen/padding_left_account_item"
+                android:paddingRight="@dimen/padding_right_account_item"
+                android:paddingTop="@dimen/padding_top_account_item">
+
+                <ImageView
+                    android:id="@+id/account_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/account_logo"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/account_logo"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/account_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_large"
+                        tools:text="钱小二"/>
+
+                    <TextView
+                        android:id="@+id/account_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        tools:text="18999667788"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_action_next_item_light"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/account_asset"
+                style="@style/account_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/account_asset"
+                    android:textSize="@dimen/font_large"/>
+
+                <ImageView
+                    android:id="@id/action_next_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_action_next_item_dark"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/action_next_item"
+                    android:textSize="@dimen/font_large"
+                    tools:text="$5000.00"/>
+            </RelativeLayout>
+
+            <include
+                layout="@layout/empty_divider_layout"/>
+
+            <RelativeLayout
+                android:id="@+id/account_apply"
+                style="@style/account_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/account_apply"
+                    android:textSize="@dimen/font_large"/>
+
+                <ImageView
+                    android:id="@id/action_next_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_action_next_item_dark"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/action_next_item"
+                    android:visibility="gone"
+                    android:src="@drawable/red_dot"/>
+            </RelativeLayout>
+            <include
+                layout="@layout/empty_divider_layout"/>
+            <RelativeLayout
+                android:id="@+id/account_transaction_detail"
+                style="@style/account_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/account_transaction_detail"
+                    android:textSize="@dimen/font_large"/>
+
+                <ImageView
+                    android:id="@id/action_next_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_action_next_item_dark"/>
+
+            </RelativeLayout>
+
+            <include
+                layout="@layout/empty_divider_layout"/>
+
+            <RelativeLayout
+                android:id="@+id/account_invest"
+                style="@style/account_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/account_invest"
+                    android:textSize="@dimen/font_large"/>
+
+                <ImageView
+                    android:id="@id/action_next_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_action_next_item_dark"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/account_about"
+                style="@style/account_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/about_zebra"
+                    android:textSize="@dimen/font_large"/>
+
+                <ImageView
+                    android:id="@id/action_next_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_action_next_item_dark"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="40dp"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/account_withdraw"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_left_account_item"
+                    android:background="@drawable/button_dark_bg"
+                    android:text="@string/cash"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_large"/>
+
+                <Button
+                    android:id="@+id/account_recharge"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/padding_left_account_item"
+                    android:background="@drawable/button_green_bg"
+                    android:text="@string/recharge"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_large"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/openHFDialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:visibility="gone"
+        android:padding="40dp"
+        android:background="@color/half_transparent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/account_logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="您尚未开通汇付账号\n为保证您的资金安全，建议您立马开通"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_large"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@id/dialog_ok"
+                style="@style/CustomTextViewButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="立即开通"/>
+
+            <TextView
+                android:id="@+id/fast_repay"
+                style="@style/CustomTextViewButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                android:text="我的申请"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

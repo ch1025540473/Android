@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="terms_of_payment">
+        <item>--请选择交租方式--</item>
+        <item>季付(三个月付一次)</item>
+        <item>半年付(六个月付一次)</item>
+    </string-array>
+
+    <string-array name="cities">
+        <item>@string/choose</item>
+        <item>成都</item>
+        <item>北京</item>
+    </string-array>
+    
+    <string-array name="diploma">
+        <item>@string/choose</item>
+        <item>高中以下</item>
+        <item>高中</item>
+        <item>专科</item>
+        <item>本科</item>
+        <item>硕士</item>
+        <item>博士</item>
+    </string-array>
+
+    <string-array name="income">
+        <item>@string/choose</item>
+        <item>1000以下</item>
+        <item>1000-2000</item>
+        <item>2000-3000</item>
+        <item>3000-5000</item>
+        <item>5000-8000</item>
+        <item>8000-12000</item>
+        <item>12000以上</item>
+    </string-array>
+
+    <string-array name="expend">
+        <item>@string/choose</item>
+        <item>1000以下</item>
+        <item>1000-2000</item>
+        <item>2000-3000</item>
+        <item>3000-5000</item>
+        <item>5000-8000</item>
+        <item>8000-12000</item>
+        <item>12000以上</item>
+    </string-array>
+
+    <string-array name="how_to_pay">
+        <item>@string/choose</item>
+        <item>季付(三个月交一次租)</item>
+        <item>半年付(六个月交一次租)</item>
+    </string-array>
+    
+    <string-array name="budget">
+        <item>@string/choose</item>
+        <item>不限</item>
+        <item>1000以下</item>
+        <item>1000-1500</item>
+        <item>1500-2000</item>
+        <item>2000-3000</item>
+        <item>3000以上</item>
+    </string-array>
+
+    <string-array name="house_type">
+        <item>@string/choose</item>
+        <item>单间</item>
+        <item>一室</item>
+        <item>两室</item>
+        <item>三室</item>
+        <item>四室及以上</item>
+        <item>不限</item>
+    </string-array>
+    
+    <string-array name="company_size">
+        <item>@string/choose</item>
+        <item>50人以下</item>
+        <item>50-200人</item>
+        <item>200-500人</item>
+        <item>500-1000人</item>
+        <item>1000-10000人</item>
+        <item>10000人以上</item>
+    </string-array>
+
+    <string-array name="source_of_income">
+        <item>@string/choose</item>
+        <item>兼职/打工</item>
+        <item>参加实习</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="marriage">
+        <item>@string/choose</item>
+        <item>已婚</item>
+        <item>未婚</item>
+        <item>离异</item>
+    </string-array>
+
+    <string-array name="company_type">
+        <item>@string/choose</item>
+        <item>国企/事业单位</item>
+        <item>私企</item>
+        <item>外资</item>
+        <item>其他</item>
+    </string-array>
+    
+    <string-array name="family_relation">
+        <item>@string/choose</item>
+        <item>父母</item>
+        <item>配偶</item>
+    </string-array>
+
+    <string-array name="friend_relation">
+        <item>@string/choose</item>
+        <item>朋友</item>
+        <item>同学</item>
+        <item>同事</item>
+    </string-array>
+    
+    <string-array name="self_pay_amount">
+        <item>@string/choose</item>
+        <item>500以下</item>
+        <item>500-1000</item>
+        <item>1000-2000</item>
+        <item>2000-3000</item>
+        <item>3000-4000</item>
+        <item>4000-5000</item>
+        <item>5000-8000</item>
+        <item>8000以上</item>
+    </string-array>
+
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+    
+</resources>

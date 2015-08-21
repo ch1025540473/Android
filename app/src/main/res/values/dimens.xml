@@ -1,0 +1,58 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="font_xxlarge">22sp</dimen>
+    <dimen name="font_xlarge">20sp</dimen>
+    <dimen name="font_large">16sp</dimen>
+    <dimen name="font_normal">14sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_tiny">10sp</dimen>
+
+
+    <dimen name="padding_left_account_item">20dp</dimen>
+    <dimen name="padding_top_account_item">16dp</dimen>
+    <dimen name="padding_right_account_item">16dp</dimen>
+    <dimen name="padding_bottom_account_item">16dp</dimen>
+    
+    <dimen name="height_empty_border">10dp</dimen>
+
+    <dimen name="button_text_padding">12dp</dimen>
+    
+    <!-- layout相关 -->
+    <dimen name="progress_layout_height">60dp</dimen>
+    <dimen name="layout_padding">16dp</dimen>
+    <dimen name="layout_margin_top_about_input_item">10dp</dimen>
+    <dimen name="layout_margin_top_about_example_text">6dp</dimen>
+    <dimen name="layout_margin_top_per_step">16dp</dimen>
+    <dimen name="layout_margin_top_large">48dp</dimen>
+    <dimen name="scroll_view_submit_button_layout_margin_bottom">100dp</dimen>
+    <dimen name="icon_layout_width">100dp</dimen>
+
+    <!-- 控件相关 -->
+    <dimen name="edit_text_title_width">70dp</dimen>
+    <dimen name="edit_text_height">40dp</dimen>
+    <dimen name="tips_padding">16dp</dimen>
+    <dimen name="spinner_padding">6dp</dimen>
+    <dimen name="spinner_dropdown_padding">16dp</dimen>
+    <dimen name="edit_text_padding">6dp</dimen>
+    <dimen name="camera_picture_margin_large">10dp</dimen>
+    <dimen name="camera_picture_margin_small">6dp</dimen>
+    <dimen name="exam_dimen_large">100dp</dimen>
+    <dimen name="exam_dimen_small">60dp</dimen>
+    <dimen name="exam_text_dimen_large">40dp</dimen>
+    <dimen name="exam_text_dimen_small">30dp</dimen>
+    <dimen name="submit_button_margin_top">30dp</dimen>
+    <dimen name="spinner_margin_left_of_edit_text">6dp</dimen>
+    <dimen name="margin_between_icon_and_text">4dp</dimen>
+    <dimen name="upload_margin_left">6dp</dimen>
+    <dimen name="border_width">0.5dp</dimen>
+
+    <!-- 图标相关 -->
+    <dimen name="dingwei_width">60dp</dimen>
+    <dimen name="state_circular_dimen">40dp</dimen>
+
+    <!-- 文案相关 -->
+    <dimen name="wenan_font_size">@dimen/font_small</dimen>
+</resources>

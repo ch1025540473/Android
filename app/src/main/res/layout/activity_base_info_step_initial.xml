@@ -1,0 +1,262 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wezebra.zebraking.ui.installment.BaseInfoStepInitialActivity"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/progress_layout_height"
+        android:padding="@dimen/layout_padding"
+        android:background="@color/dark_grey"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="33%"
+            android:textColor="@color/text_green"
+            android:textSize="@dimen/font_small"
+            android:layout_gravity="right"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/progressbar_bg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/progressbar"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/progressbar_fg"
+                    android:visibility="visible"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/progressbar_fg"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+        <com.wezebra.zebraking.widget.CustomSeekBar
+            android:id="@+id/pro"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/application_tips_border"
+            android:padding="@dimen/tips_padding"
+            android:text=""
+            android:textSize="@dimen/font_normal"
+            android:textColor="@color/text_red"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/layout_margin_top_about_input_item">
+
+            <TextView
+                android:layout_width="@dimen/edit_text_title_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="姓名"
+                android:textSize="@dimen/font_normal"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_weight="1"
+                android:padding="@dimen/edit_text_padding"
+                android:background="@drawable/edit_text_border"
+                android:maxLength="20"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/layout_margin_top_about_input_item">
+
+            <TextView
+                android:layout_width="@dimen/edit_text_title_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="身份证号"
+                android:textSize="@dimen/font_normal"/>
+
+            <EditText
+                android:id="@+id/id_card"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_weight="1"
+                android:padding="@dimen/edit_text_padding"
+                android:background="@drawable/edit_text_border"
+                android:inputType="textPassword"
+                android:maxLength="18"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/layout_margin_top_about_input_item">
+
+            <TextView
+                android:layout_width="@dimen/edit_text_title_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="QQ号"
+                android:textSize="@dimen/font_normal"/>
+
+            <EditText
+                android:id="@+id/qq"
+                android:layout_width="@dimen/edit_text_title_width"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_weight="1"
+                android:padding="@dimen/edit_text_padding"
+                android:background="@drawable/edit_text_border"
+                android:inputType="phone"
+                android:maxLength="15"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/layout_margin_top_about_input_item">
+
+            <TextView
+                android:layout_width="@dimen/edit_text_title_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="现居城市"
+                android:textSize="@dimen/font_normal"/>
+            
+            <Spinner
+                android:id="@+id/cities"
+                android:layout_width="96dp"
+                android:layout_height="@dimen/edit_text_height"
+                android:background="@drawable/edit_text_border"/>
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/edit_text_padding"
+                android:background="@drawable/edit_text_border"
+                android:hint="详细地址"
+                android:maxLength="50"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/layout_margin_top_about_input_item">
+
+            <TextView
+                android:layout_width="@dimen/edit_text_title_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="当前状态"/>
+
+            <RadioGroup
+                android:id="@+id/graduation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/graduated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/edit_text_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_left_radio_btn_bg"
+                    android:button="@null"
+                    android:text="已毕业"
+                    android:textColor="@color/selector_radio_text_color"
+                    android:gravity="center"/>
+
+                <RadioButton
+                    android:id="@+id/ungraduated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/edit_text_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_right_radio_btn_bg"
+                    android:button="@null"
+                    android:text="在校生"
+                    android:gravity="center"
+                    android:textColor="@color/selector_radio_text_color"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/next_page"
+            android:layout_marginTop="60dp"
+            style="@style/CustomTextViewButton"
+            android:text="下一页"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

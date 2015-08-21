@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.wezebra.zebraking.wxapi.WXPayEntryActivity">
+
+    <LinearLayout
+        android:id="@+id/success_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_wxpay_success"
+            android:drawablePadding="8dp"
+            android:textSize="@dimen/font_large"
+            android:textColor="@color/text_light"
+            android:text="支付成功"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@color/grey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:textSize="@dimen/font_large"
+                android:textColor="@color/text_light"
+                android:text="支付金额:"/>
+
+            <TextView
+                android:id="@+id/pay_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_large"
+                tools:text="80元"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:textSize="@dimen/font_large"
+                android:textColor="@color/text_light"
+                android:text="订单编号:"/>
+
+            <TextView
+                android:id="@+id/pay_order_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_large"
+                tools:text="893888383399020"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_pay_success"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="@dimen/font_large"
+            android:textColor="@color/text_white"
+            android:gravity="center"
+            android:padding="12dp"
+            android:background="@drawable/button_green_bg"
+            android:text="确定"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/pay_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:drawableLeft="@drawable/ic_wxpay_fail"
+            android:drawablePadding="8dp"
+            android:textSize="@dimen/font_large"
+            android:textColor="@color/text_light"
+            android:text="支付失败"/>
+
+        <TextView
+            android:id="@+id/btn_pay_fail"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="@dimen/font_large"
+            android:textColor="@color/text_white"
+            android:gravity="center"
+            android:padding="12dp"
+            android:background="@drawable/button_green_bg"
+            android:text="返回"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pay_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/fail_layout"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:drawableRight="@drawable/ic_next_green"
+        android:drawablePadding="4dp"
+        android:textColor="@color/text_green"
+        android:text="有疑问请致电斑马金融客服"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="16dp"
+              android:orientation="vertical"
+              tools:context="com.wezebra.zebraking.ui.installment.GrantActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_large"
+            android:text="授权说明"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:textSize="@dimen/font_large"
+            android:text="@string/grant_tip"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="2dp"
+            android:layerType="software"
+            android:background="@drawable/dotted_line"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_large"
+            android:textColor="@color/text_red"
+            android:text="提示：亲爱的小伙伴，如果您不亲自授权的话，房租就无法及时到达房东大人手里，当心流落街头！"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/submit"
+        style="@style/CustomTextViewButton"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="去授权"/>
+
+</LinearLayout>

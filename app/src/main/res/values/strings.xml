@@ -1,0 +1,257 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+    
+    <string name="app_name">斑马王国</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_pre_calculation">分期试算</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+    <string name="account_asset">我的资产</string>
+    <string name="account_available">可用余额</string>
+    <string name="account_apply">我的分期</string>
+    <string name="account_repayment">我的还款</string>
+    <string name="account_transaction_detail">交易明细</string>
+    <string name="account_invest">投资列表</string>
+    <string name="about_zebra">关于斑马</string>
+    <string name="cash">提现</string>
+    <string name="recharge">充值</string>
+    <string name="title_activity_personal_info">个人中心</string>
+    <string name="third_party_account">第三方托管开户</string>
+    <string name="my_bank_card">我的银行卡</string>
+    <string name="account_not_open">未开户</string>
+    <string name="account_opened">已开户</string>
+    <string name="bank_not_attach">充值绑卡</string>
+    <string name="bank_attached">已绑卡</string>
+    <string name="password_reset">修改登录密码</string>
+    <string name="change_bind_phone">更改绑定手机</string>
+    <string name="personal_data">我的资料</string>
+    <string name="agreement">我同意《斑马王国服务与隐私协议》</string>
+    <string name="sign_out">退出</string>
+    <string name="title_activity_asset">我的资产</string>
+    <string name="title_activity_apply">我的分期</string>
+    <string name="title_activity_repayment">我的还款</string>
+    <string name="title_activity_transaction_detail">交易明细</string>
+    <string name="title_activity_withdraw">提现</string>
+    <string name="title_activity_recharge">充值</string>
+    <string name="title_activity_bank_card">我的银行卡</string>
+    <string name="title_activity_password_reset">修改密码</string>
+    <string name="title_change_bind_name">修改密码</string>
+    <string name="get_verify">获取验证码</string>
+    <string name="hint_input_password">输入登录密码（6位以上数字和字母）</string>
+    <string name="hint_input_verify">输入验证码</string>
+    <string name="hint_input_set_password">设置登录密码（6位以上数字和字母）</string>
+    <string name="hint_input_reset_password">重设登录密码（6位以上数字和字母）</string>
+    <string name="done">完成</string>
+    <string name="asset_total">资产总计(元)</string>
+    <string name="asset_available">可用余额(元)</string>
+    <string name="asset_block">冻结余额(元)</string>
+    <string name="asset_invested">已投余额（元）</string>
+    <string name="repayment_total">待还本息(元)</string>
+    <string name="repayment_principal">待还本金(元)</string>
+    <string name="repayment_service_fee">服务费(元)</string>
+    <string name="repayment_fine">逾期罚款(元)</string>
+    <string name="repayment_action_pay">确认还款</string>
+    <string name="tip_block"><u>什么是冻结金额？</u></string>
+    <string name="next_step">下一步</string>
+    <string name="title_activity_invest">投资</string>
+    <string name="title_activity_tender">投资列表</string>
+    <string name="title_activity_repayment_detail">我的还款</string>
+    <string name="title_activity_assess">资质评估</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="title_activity_assessment_unpassed">资质评估</string>
+    <string name="title_activity_assessment_passed">资质评估</string>
+    <string name="title_activity_submit_installment_application">提交分期申请</string>
+    <string name="title_activity_base_info">基础信息</string>
+    <string name="title_activity_base_info_graduated_step_one">基础信息</string>
+    <string name="title_activity_base_info_graduated_step_two">基础信息</string>
+    <string name="title_activity_base_info_graduated_with_job_step_one">基础信息</string>
+    <string name="title_activity_base_info_graduated_with_job_step_two">基础信息</string>
+    <string name="title_activity_base_info_un_graduated_step_one">基础信息</string>
+    <string name="title_activity_base_info_ungraduated_step_two">基础信息</string>
+    <string name="title_activity_identification">身份信息</string>
+    <string name="title_activity_phone_number">登录</string>
+    <string name="title_activity_password">登录</string>
+    <string name="agreement_installment">《斑马王国借款与还款协议》</string>
+    <string name="requirement_of_zebrakingdom">斑马王国的要求</string>
+
+    <!-- 控件相关 -->
+    <string name="personal_example_tips">示例\n个性认证</string>
+    <string name="pre_calculation_with_hyper_link"><u>费用试算</u></string>
+    <string name="choose">--请选择--</string>
+    <string name="edu_entrance_time">请选择入学时间</string>
+    <string name="graduation_date">请选择毕业时间</string>
+    <string name="job_entrance_time">请选择入职时间</string>
+
+    <string name="title_activity_job_info">工作信息</string>
+    <string name="title_activity_education_auth">学历认证</string>
+    <string name="title_activity_income_auth">收入信息</string>
+    <string name="title_activity_social_security_auth">社保信息</string>
+    <string name="title_activity_social_security_auth_dex">信息证明超有力，通过率高</string>
+    <string name="title_activity_public_acc_funds_auth">公积金信息</string>
+    <string name="title_activity_public_acc_funds_auth_des">轻松证明工作信息就靠它</string>
+    <string name="title_activity_wait_audit">分期申请审核</string>
+    <string name="title_activity_contacts_auth">联系人信息</string>
+    <string name="title_activity_submit_installment_application_step_two">房租信息确认</string>
+    <string name="title_activity_landlord_auth">房东账号信息</string>
+    <string name="title_activity_house_data_auth">租房资料</string>
+    <string name="title_activity_submit">极速放款</string>
+    <string name="title_activity_assess_countdown">资质评估</string>
+    <string name="title_activity_personal_profile">个人资料</string>
+    <string name="title_activity_about">关于斑马</string>
+    <string name="title_activity_feedback">意见反馈</string>
+    <string name="title_activity_phone_auth">手机认证</string>
+    <string name="title_activity_phone_auth_step_two">手机认证</string>
+    <string name="title_activity_phone_auth_step_three">手机认证</string>
+    <string name="title_activity_apply_detail">申请详情</string>
+    <string name="title_activity_siastep_two_result">租房信息确认</string>
+    <string name="title_activity_siastep_three_result">极速放款</string>
+    <string name="title_activity_siastep_one_result">分期申请审核</string>
+    <string name="title_activity_assessment_result">资质评估</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="title_activity_grant">授权</string>
+    <string name="title_activity_re_fill"></string>
+    <string name="title_activity_work_info">工作信息</string>
+    <string name="title_activity_service_info">在职信息</string>
+    <string name="title_activity_service_info_detail">只需工牌or劳动合同or工作证明即可轻松提交</string>
+    <string name="title_activity_company_email">企业邮箱</string>
+    <string name="title_activity_company_email_detail">只需企业邮箱地址即可轻松验证</string>
+
+    <!-- 错误提示文案 -->
+    <string name="http_post_errors">资料提交失败，请检查手机的网络连接</string>
+    <string name="http_request_failure">资料提交失败，请稍后再试</string>
+    <string name="access_server_errors">访问服务器失败，请稍后再试</string>
+    <string name="no_input_errors">此项信息为必填项</string>
+    <string name="name_errors">请填写正确的汉字姓名</string>
+    <string name="id_card_errors">请填写正确的身份证号码</string>
+    <string name="diploma_errors">请选择您的学历</string>
+    <string name="income_errors">请选择您的月收入</string>
+    <string name="rent_fee_monthly_errors">请填写正确的月租金金额</string>
+    <string name="how_to_pay_errors">请选择您的交租方式</string>
+    <string name="introducer_errors">请填写正确的推荐人手机号码</string>
+    <string name="budget_errors">请选择您的租房预算</string>
+    <string name="house_type_errors">请选择您的户型</string>
+    <string name="rent_area_errors">请填写您的租房区域</string>
+    <string name="title_activity_loading">LoadingActivity</string>
+    <string name="city_errors">请选择城市信息</string>
+    <string name="edu_entrance_time_errors">请选择入学时间</string>
+    <string name="source_of_income_errors">请选择您的收入来源</string>
+    <string name="source_of_life_errors">请选择您的生活来源</string>
+    <string name="expend_errors">请选择您的月均支出</string>
+    <string name="marriage_errors">请选择您的婚姻状况</string>
+    <string name="credit_amount_errors">请填写正确的信用卡额度</string>
+    <string name="school_name_errors">请填写正确的学校名称</string>
+    <string name="company_name_errors">请填写正确的公司名称</string>
+    <string name="position_errors">请填写正确的职务</string>
+    <string name="job_entrance_time_errors">请选择您的入职时间</string>
+    <string name="company_size_errors">请选择公司规模</string>
+    <string name="graduation_date_errors">请选择您的毕业时间</string>
+    <string name="edu_auth_account_errors">请填写您的学信账号</string>
+    <string name="edu_auth_password_errors">请填写您的查询密码</string>
+    <string name="picture_not_selected_errors">请选择您要上传的照片</string>
+    <string name="income_auth_pay_day_errors">请填写您的发薪日</string>
+    <string name="income_auth_card_no_errors">请填写您的工资卡号</string>
+    <string name="income_auth_password_errors">请填写您的查询密码</string>
+    <string name="social_security_auth_city_select_errors">请选择您的缴纳城市</string>
+    <string name="social_security_auth_self_pay_amount_errors">请选择您的自缴金额</string>
+    <string name="social_security_auth_account_errors">请填写您的社保账号</string>
+    <string name="social_security_auth_password_errors">请填写您的查询密码</string>
+    <string name="paf_auth_city_select_errors">请选择您的缴纳城市</string>
+    <string name="paf_auth_self_pay_amount_errors">请选择您的自缴金额</string>
+    <string name="paf_auth_account_errors">请填写您的公积金号</string>
+    <string name="paf_auth_password_errors">请填写您的查询密码</string>
+    <string name="id_select_errors">请添加您的手持身份证照片</string>
+    <string name="id_front_select_errors">请添加您的身份证正面照片</string>
+    <string name="id_back_select_errors">请添加您的身份证背面照片</string>
+    <string name="id_modify_errors">请按修改要求上传您的新照片</string>
+    <string name="company_type_errors">请选择公司类型</string>
+    <string name="department_errors">请填写您的所在部门</string>
+    <string name="company_phone_errors">请填写您的公司座机</string>
+    <string name="company_address_errors">请填写您的公司详址</string>
+    <string name="family_relation_select_errors">请选择亲属联系人关系</string>
+    <string name="family_name_errors">请填写您的亲属联系人的姓名</string>
+    <string name="family_phone_errors">请正确填写您的亲属联系人手机号</string>
+    <string name="friend_relation_select_errors">请选择好友联系人关系</string>
+    <string name="friend_name_errors">请填写您的好友联系人的姓名</string>
+    <string name="friend_phone_errors">请正确填写您的好友联系人手机号</string>
+    <string name="bank_card_errors">请正确填写您的银行卡号</string>
+    <string name="attibution_errors">请选择所属地</string>
+    <string name="landlord_name_errors">请填写房东姓名</string>
+    <string name="branch_name">请填写支行名称</string>
+    <string name="mobile_phone_format_errors">请填写正确的手机号码</string>
+    <string name="contract_errors">请添加您的租房合同照片</string>
+    <string name="other_material_errors">请添加您的房产证/购房合同/水电气缴费单(任选其一)照片</string>
+    <string name="house_data_modify_errors">请按修改要求上传您的新图片</string>
+    <string name="password_empty_errors">请填写您的密码</string>
+    <string name="verify_code_empty_errors">请填写验证码</string>
+    <string name="verity_code_re_input_errors">请重新填写验证码</string>
+    <string name="upload_file_errors">上传文件出错，请检查网络连接后重试</string>
+    <string name="sms_code_empty_errors">请填写短信验证码</string>
+
+    <!-- 首页订单状态描述 -->
+    <string name="order_auditing_first">评估中</string>
+    <string name="order_waiting_improve">待完善</string>
+    <string name="order_auditing_basic">审核中</string>
+    <string name="order_waiting_added">待补充</string>
+    <string name="order_auditing_added">处理中</string>
+    <string name="order_waiting_modify">待修改</string>
+    <string name="order_waiting_pay_first">待付款</string>
+    <string name="order_waiting_grant">待授权</string>
+    <string name="order_auditing_loan">放款中</string>
+
+    <string name="apply_now">立即申请</string>
+    <string name="check_now">立即查看</string>
+
+    <string name="tips">提示</string>
+    <string name="OK">确定</string>
+
+    <string name="submit_step_one_default_tips">请填写以下信息，提交申请\n审核通过即可成功办理分期</string>
+    <string name="submit_step_two_default_tips">恭喜您已通过审核，赶紧填写以下信息提交\n成功就在眼前啦</string>
+    <string name="refill_tips">你已经填写过此项信息\n如果个人信息未发生变更\n斑马菌建议建议您不要轻易修改哦。</string>
+
+    <string name="submit_confirmation">请确认所填信息正确无误，完成后将暂时无法更改哦</string>
+
+    <string name="off_line_pay_tips">请选择以下任一方式进行支付</string>
+    <string name="pay_by_alipay">1.支付宝转账</string>
+    <string name="pay_by_bank">2.银行卡转账</string>
+
+    <string name="title_activity_authorize">AuthorizeActivity</string>
+
+    <!-- 认证状态相关提示 -->
+    <string name="status_auditing_tips">别摸人家了，暂时不能更改啦</string>
+    
+    <string name="charge_tip">温馨提示：\n\n1.您在斑马王国充值全程免费，由斑马王国为您垫付第三方充值手续费，不收取您任何手续费；
+    \n\n2.充值金额应大于等于 1元，每日充值限额请参照支付说明；
+    \n\n3.请您根据投资计划合理充值，不建议资金在未投资的情况下提现，详情请查阅提现注意事项；
+\n\n4. 斑马王国移动端目前仅支持汇付天下快捷支付，如有疑问请咨询斑马王国客服或开户银行客服。</string>
+
+     <string name="cash_tip">温馨提示：\n\n1.汇付天下快捷支付采用同卡进出机制，使用快捷支付充值，则提现必须使用已绑定的快捷支付银行卡；
+\n\n2. 为了让你有良好的体验，每日前三笔提现免费。为防止套现和洗钱，超过3笔将收取每笔（2 + 提现金额 × 0.05%）元的手续费，作为第三方支付平台转账费用；
+\n\n3. 资金到达用户账户的当日（包括周六/周日/法定节假日）即可发起提现申请；
+\n\n4. 提现预计到账时间为提现后次日24点前，遇双休日、法定节假日顺延至下一工作日24点前，实际到账时间依据第三方资金监管汇付天下及提现银行而有所差异。</string>
+
+    <string name="bank_card_tip">温馨提示：\n\n斑马王国现仅支持绑定一张快捷银行卡。若需变更或解绑银行卡，请致电斑马客服: 400-833-6069</string>
+
+    <string name="crash_toast">斑马王国出现错误，请重新打开应用</string>
+
+    <string name="grant_tip">由于斑马王国需要帮您把垫付租金转至房东大人的银行卡账户，特此请求亲爱的斑马小伙伴进行授权。以便放款完成后租金能嗖~的一下到达房东大人的账户</string>
+    <string name="title_activity_wxpay_entry">支付结果</string>
+
+    <string name="title_activity_wp_pay">支付结果</string>
+    <string name="title_activity_select_pay_way">请选择支付方式</string>
+    <string name="title_activity_person_llinfo_certificate">快捷支付</string>
+    <string name="title_activity_ll_pay_result">支付结果</string>
+
+    <string name="company_email_des">请输入本人的有效企业邮箱地址进行验证</string>
+    <string name="company_email_des_mark">(带有企业域名作为后缀的电子邮箱地址)</string>
+    <string name="company_email_complete">斑马王国已向您liuyin******163.com的邮箱发送了验证邮件，请登录您的邮箱按邮件提示要求进行验证，并输入邮件中得安全码</string>
+    <string name="title_activity_sesame_credit">立即授权</string>
+    <string name="title_sesame_credit">授权查询芝麻信用</string>
+    <string name="title_sesame_credit_des">点击授权此项可提高80%的审核通过率</string>
+    <string name="title_sesame_credit_des_two">是您房租分期申请的重要参考依据哦</string>
+    <string name="turn_up">跳过 ></string>
+</resources>

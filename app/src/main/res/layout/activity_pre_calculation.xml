@@ -1,0 +1,202 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.wezebra.zebraking.ui.installment.PreCalculationActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <FrameLayout
+        android:id="@+id/animation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/line_01"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/line_1"/>
+
+        <ImageView
+            android:id="@+id/line_02"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="72dp"
+            android:src="@drawable/line_2"/>
+
+        <ImageView
+            android:id="@+id/line_03"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="112dp"
+            android:src="@drawable/line_3"/>
+
+        <ImageView
+            android:id="@+id/line_04"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="152dp"
+            android:src="@drawable/line_4"/>
+
+        <FrameLayout
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="32dp">
+
+            <ImageView
+                android:id="@+id/cosmos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/cosmos"/>
+
+            <ImageView
+                android:id="@+id/hexagon_min"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/hexagon_min"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="试算\n结果"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/text_01"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginLeft="160dp"
+            android:gravity="bottom"
+            android:text="分期金额："/>
+
+        <TextView
+            android:id="@+id/text_02"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="44dp"
+            android:gravity="bottom"
+            android:text="服务费："/>
+
+        <TextView
+            android:id="@+id/text_03"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="84dp"
+            android:gravity="bottom"
+            android:text="分期数："/>
+
+        <TextView
+            android:id="@+id/text_04"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="138dp"
+            android:gravity="bottom"
+            android:text="每月还款："/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/input_window"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/animation_layout"
+        android:padding="1dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请填写以下信息进行试算"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(斑马菌只对除首月外的租金进行分期哦)"
+            android:textSize="@dimen/font_small"
+            android:textColor="@color/text_light"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="@dimen/edit_text_title_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="月租金"
+                    android:textSize="@dimen/font_normal"/>
+
+                <EditText
+                    android:id="@+id/amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_text_height"
+                    android:padding="8dp"
+                    android:hint="请填写月租金，如1000"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:background="@drawable/input_box_shape"
+                    android:maxLength="5"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="@dimen/edit_text_title_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="交租方式"
+                    android:textSize="@dimen/font_normal"/>
+
+                <Spinner
+                    android:id="@+id/terms"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_text_height"
+                    android:padding="8dp"
+                    android:entries="@array/terms_of_payment"
+                    android:background="@drawable/input_box_shape"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/calculate"
+        android:layout_below="@+id/input_window"
+        android:layout_marginTop="@dimen/submit_button_margin_top"
+        android:text="立即试算"
+        style="@style/CustomTextViewButton"/>
+
+</RelativeLayout>
+</ScrollView>

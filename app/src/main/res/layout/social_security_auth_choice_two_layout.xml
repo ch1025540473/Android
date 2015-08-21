@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <include layout="@layout/upload_layout"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left">
+
+                <ImageView
+                    android:id="@+id/exam_ss"
+                    android:layout_width="@dimen/exam_dimen_small"
+                    android:layout_height="@dimen/exam_dimen_small"
+                    android:layout_gravity="center"
+                    android:background="@drawable/exam_ss"
+                    android:src="@color/half_transparent"/>
+
+                <TextView
+                    android:layout_width="@dimen/exam_dimen_small"
+                    android:layout_height="@dimen/exam_dimen_small"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="示例\n社保流水"
+                    android:textSize="@dimen/font_small"
+                    android:textColor="@color/text_light"/>
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:text="斑马王国的要求："
+        android:textSize="@dimen/wenan_font_size"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_example_text"
+        android:text="1.图片清晰，照片上文字清晰可见"
+        android:textSize="@dimen/wenan_font_size"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_example_text"
+        android:text="2.需包含自己的身份信息，如：姓名、身份证号"
+        android:textSize="@dimen/wenan_font_size"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_example_text"
+        android:text="3.需包含最近3个月流水及缴纳公司信息"
+        android:textSize="@dimen/wenan_font_size"/>
+
+    <TextView
+        android:id="@+id/submit_two"
+        android:layout_marginTop="@dimen/submit_button_margin_top"
+        android:text="完成"
+        style="@style/CustomTextViewButton"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

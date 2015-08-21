@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.wezebra.zebraking.ui.installment.SesameCreditActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/sesame_bg"
+       android:padding="16dp"
+       android:gravity="center_vertical"
+       >
+
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/sesame_icon"
+           android:src="@drawable/sesame_icon"/>
+
+       <TextView
+           android:layout_marginLeft="7dp"
+           android:layout_marginTop="5dp"
+           android:padding="5dp"
+           android:layout_toRightOf="@id/sesame_icon"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="@dimen/font_large"
+           android:id="@+id/big_text"
+           android:text="@string/title_sesame_credit"/>
+
+       <TextView
+           android:layout_marginLeft="8dp"
+           android:padding="6dp"
+           android:layout_marginTop="20dp"
+           android:layout_toRightOf="@id/sesame_icon"
+           android:layout_below="@id/big_text"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/title_sesame_credit"
+           android:textColor="@color/grey"/>
+   </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="#EEEEEE">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/sesame_des"
+        android:text="@string/title_sesame_credit_des"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:text="@string/title_sesame_credit_des_two"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@id/submit"
+        android:background="@drawable/auth_costom_button_green"
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/title_activity_sesame_credit"
+        android:textColor="@color/abc_primary_text_material_dark"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_grey"></LinearLayout>
+    <TextView
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:id="@+id/turn_up"
+        android:text="@string/turn_up"
+        android:textSize="@dimen/font_large"
+        android:textColor="@color/text_light"/>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.wezebra.zebraking.ui.myaccount.RepaymentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@color/dark_grey">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:drawableRight="@drawable/divider_tab"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_normal"
+            android:text="还款时间"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableRight="@drawable/divider_tab"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_normal"
+            android:text="还款金额(元)"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:drawableRight="@drawable/divider_tab"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_normal"
+            android:visibility="gone"
+            android:text="还款时间"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_normal"
+            android:text="状态"/>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"></ListView>
+    
+    <TextView
+        android:id="@+id/apply_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/font_large"
+        android:layout_gravity="right"
+        android:text="申请详情"/>
+
+</LinearLayout>

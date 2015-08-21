@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_next_item" type="id"></item>
+    <item name="card_no" type="id"></item>
+    <item name="list" type="id"></item>
+    <item name="dialog_title" type="id"></item>
+    <item name="dialog_content" type="id"></item>
+    <item name="dialog_ok" type="id"></item>
+    <item name="submit" type="id"></item>
+</resources>

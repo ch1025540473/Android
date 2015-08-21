@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.wezebra.zebraking.ui.installment.EducationAuthActivity"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:padding="@dimen/tips_padding"
+        android:background="@drawable/application_tips_border"
+        android:text=""
+        android:textSize="@dimen/font_normal"
+        android:textColor="@color/text_red"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:text="请填写学历信息，以下方式任选其一"
+        android:textSize="@dimen/font_normal"/>
+
+    <RadioGroup
+        android:id="@+id/choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/choice_one"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/button_text_padding"
+            android:gravity="center"
+            android:button="@null"
+            android:text="学信网认证"
+            android:textSize="@dimen/font_normal"
+            android:textColor="@color/selector_radio_text_color"
+            android:background="@drawable/selector_left_radio_btn_bg"/>
+
+        <RadioButton
+            android:id="@+id/choice_two"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/button_text_padding"
+            android:button="@null"
+            android:text="毕业证/学生证照片"
+            android:textSize="@dimen/font_normal"
+            android:textColor="@color/selector_radio_text_color"
+            android:background="@drawable/selector_right_radio_btn_bg"/>
+
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/*.iml
+/app/*.iml
+/.idea
+*.iml
+/app/app.iml
+.idea

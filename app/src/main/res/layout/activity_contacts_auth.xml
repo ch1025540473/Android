@@ -1,0 +1,172 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.wezebra.zebraking.ui.installment.ContactsAuthActivity"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/tips_padding"
+            android:background="@drawable/application_tips_border"
+            android:text="以下信息需要修改"
+            android:textSize="@dimen/font_normal"
+            android:textColor="@color/text_red"
+            android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:text="请填写一位“亲属”联系人信息"
+        android:textSize="@dimen/font_normal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="姓名"/>
+
+        <Spinner
+            android:id="@+id/family_relation"
+            android:layout_width="96dp"
+            android:layout_height="@dimen/edit_text_height"
+            android:background="@drawable/edit_text_border"/>
+        
+        <EditText
+            android:id="@+id/family_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_marginLeft="@dimen/spinner_margin_left_of_edit_text"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/edit_text_padding"
+            android:layout_weight="2"
+            android:background="@drawable/edit_text_border"
+            android:maxLength="10"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="手机号"
+            android:textSize="@dimen/font_normal"/>
+
+        <EditText
+            android:id="@+id/family_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_weight="1"
+            android:padding="@dimen/edit_text_padding"
+            android:background="@drawable/edit_text_border"
+            android:inputType="phone"
+            android:maxLength="11"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:text="请填写一位“好友”联系人信息"
+        android:textSize="@dimen/font_normal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="姓名"/>
+
+        <Spinner
+            android:id="@+id/friend_relation"
+            android:layout_width="96dp"
+            android:layout_height="@dimen/edit_text_height"
+            android:background="@drawable/edit_text_border"/>
+
+        <EditText
+            android:id="@+id/friend_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_marginLeft="@dimen/spinner_margin_left_of_edit_text"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/edit_text_padding"
+            android:layout_weight="2"
+            android:background="@drawable/edit_text_border"
+            android:maxLength="10"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="手机号"
+            android:textSize="@dimen/font_normal"/>
+
+        <EditText
+            android:id="@+id/friend_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_weight="1"
+            android:padding="@dimen/edit_text_padding"
+            android:background="@drawable/edit_text_border"
+            android:inputType="phone"
+            android:maxLength="11"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_marginTop="@dimen/submit_button_margin_top"
+        android:layout_marginBottom="@dimen/scroll_view_submit_button_layout_margin_bottom"
+        android:text="完成"
+        style="@style/CustomTextViewButton"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+apply plugin: 'com.android.application'
+
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.wezebra.zebraking"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 6
+        versionName "1.2.2"
+
+        // dex突破65535的限制
+        multiDexEnabled true
+        // 默认是umeng的渠道
+        manifestPlaceholders = [UMENG_CHANNEL_VALUE: "umeng"]
+    }
+
+    lintOptions {
+        // set to true to turn off analysis progress reporting by lint
+        quiet true
+        // if true, stop the gradle build if errors are found
+        abortOnError false
+        // if true, only report errors
+        ignoreWarnings true
+
+        warningsAsErrors false
+    }
+
+    signingConfigs {
+        debug {
+            // No debug config
+        }
+
+        release {
+            storeFile file("../wezebra.jks")
+            storePassword "zebra888"
+            keyAlias "WezebraAndroidKey"
+            keyPassword "wezebra888"
+        }
+    }
+
+    buildTypes {
+        debug {
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            minifyEnabled false
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        // 输出apk名称为zebrakingdom_v1.0_2015-01-15_wandoujia.apk
+                        def fileName = "zebrakingdom_v${defaultConfig.versionName}_${releaseTime()}_${variant.productFlavors[0].name}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+    }
+
+    // 友盟多渠道打包
+    productFlavors {
+        wandoujia {}
+        _360 {}
+        _91{}
+        anzhuo{}
+        huawei{}
+        mumayi{}
+        meizu{}
+        sougou{}
+        anzhi{}
+        baidu {}
+        xiaomi {}
+        yingyongbao {}
+        yingyonghui{}
+        uc_taobao {}
+        wezebra{}
+        umeng{}
+        le{}
+        jifeng{}
+        leshi{}
+        oppo{}
+    }
+
+    productFlavors.all { flavor ->
+        flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.0.0'
+    compile files('libs/android-viewbadger.jar')
+    compile files('libs/ormlite-android-4.48.jar')
+    compile files('libs/ormlite-core-4.48.jar')
+    compile project(':android-volley-master')
+    compile files('libs/httpmime-4.2.5.jar')
+    compile files('libs/universal-image-loader-1.9.3.jar')
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile files('libs/umeng-update-v2.6.0.1.jar')
+    compile files('libs/com.umeng.message.lib_v2.2.0.jar')
+    compile 'ch.acra:acra:4.6.2'
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    compile project(':lock')
+    compile 'cn.bingoogolapple:bga-annotation:1.0.0@aar'
+    compile 'org.codehaus.jackson:jackson-core-asl:1.9.12'
+    compile 'org.codehaus.jackson:jackson-mapper-asl:1.9.12'
+    compile 'org.apache.httpcomponents:httpclient-android:4.3.5.1'
+    compile files('libs/libammsdk.jar')
+    compile files('libs/securepay_auth_2.4.2.04.jar')
+}

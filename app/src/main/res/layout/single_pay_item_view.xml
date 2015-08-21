@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+    <ImageView
+        android:id="@+id/wezebra_method_icon"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:drawable/screen_background_light_transparent"/>
+    <TextView
+        android:id="@+id/wezebra_title_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/wezebra_method_icon"
+        android:layout_alignTop="@id/wezebra_method_icon"
+        android:textColor="#606366"
+        android:typeface="sans"
+        android:text="微信支付"/>
+    <TextView
+        android:id="@+id/wezebra_title_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="推荐已安装的用户使用"
+        android:textColor="#ffa4a9b2"
+        android:layout_alignBottom="@id/wezebra_method_icon"
+        android:layout_below="@id/wezebra_title_content"
+        android:layout_toRightOf="@id/wezebra_method_icon"/>
+
+    <ImageView
+        android:id="@+id/wezebra_select_icon"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@android:drawable/screen_background_light_transparent"
+        />
+</RelativeLayout>

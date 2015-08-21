@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.wezebra.zebraking.ui.myaccount.InvestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="24dp"
+        android:background="@color/dark_grey">
+
+        <TextView
+            android:id="@+id/invest_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_large"
+            android:textColor="@color/text_white"
+            android:text="房租分期"/>
+        <TextView
+            android:id="@+id/invest_proId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:textSize="@dimen/font_small"
+            android:textColor="@color/text_white"
+            tools:text="0001"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="@dimen/font_large"
+            android:textColor="@color/text_white"
+            android:text="(等额本息)"/>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/empty_divider_layout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/custom_edit_layout">
+
+        <EditText
+            android:id="@+id/et_invest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:singleLine="true"
+            android:background="@color/white"
+            android:textSize="@dimen/font_large"
+            android:textColor="@color/text_dark"
+            android:hint="请输入金额"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey"/>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="20dp"
+        android:text="确定"
+        style="@style/CustomTextViewButton"/>
+
+
+</LinearLayout>

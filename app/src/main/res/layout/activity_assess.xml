@@ -1,0 +1,510 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.wezebra.zebraking.ui.installment.AssessActivity"
+    android:orientation="vertical"
+    android:background="@color/assess_activity_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/assess_board"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="请真实填写您的信息，可以提高通过率哦"
+            android:textSize="@dimen/font_normal"/>
+
+    </FrameLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:orientation="horizontal">
+    
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="姓名"
+            android:textSize="@dimen/font_normal"/>
+        
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_weight="1"
+            android:background="@drawable/assess_edit_text_border"
+            android:maxLength="20"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="身份证号"
+            android:textSize="@dimen/font_normal"/>
+
+        <EditText
+            android:id="@+id/id_card"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:background="@drawable/assess_edit_text_border"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:maxLength="18"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="学历"
+            android:textSize="@dimen/font_normal"/>
+
+        <Spinner
+            android:id="@+id/diploma"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:background="@drawable/assess_edit_text_border"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="是否毕业"
+            android:textSize="@dimen/font_normal"/>
+
+        <RadioGroup
+            android:id="@+id/graduation"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/graduated"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_weight="1"
+                android:background="@drawable/selector_left_radio_btn_white_bg"
+                android:button="@null"
+                android:text="已毕业"
+                android:textSize="@dimen/font_normal"
+                android:textColor="@color/selector_radio_text_color"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:id="@+id/ungraduated"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_weight="1"
+                android:background="@drawable/selector_right_radio_btn_white_bg"
+                android:button="@null"
+                android:text="未毕业"
+                android:textSize="@dimen/font_normal"
+                android:gravity="center"
+                android:textColor="@color/selector_radio_text_color"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="是否工作"
+            android:textSize="@dimen/font_normal"/>
+
+        <RadioGroup
+            android:id="@+id/employment"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/employed"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_weight="1"
+                android:background="@drawable/selector_left_radio_btn_white_bg"
+                android:button="@null"
+                android:text="已工作"
+                android:textSize="@dimen/font_normal"
+                android:textColor="@color/selector_radio_text_color"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:id="@+id/unEmployed"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_weight="1"
+                android:background="@drawable/selector_right_radio_btn_white_bg"
+                android:button="@null"
+                android:text="未工作"
+                android:textSize="@dimen/font_normal"
+                android:gravity="center"
+                android:textColor="@color/selector_radio_text_color"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/income_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="月收入"
+            android:textSize="@dimen/font_normal"/>
+
+        <Spinner
+            android:id="@+id/income"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_weight="1"
+            android:background="@drawable/assess_edit_text_border"
+            android:entries="@array/income"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="@dimen/edit_text_title_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:background="@drawable/cloud"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/dot_line"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/circle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/tips_padding"
+            android:text="租房状态"
+            android:textSize="@dimen/font_normal"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/circle"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/dot_line"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="找房状态"
+            android:textSize="@dimen/font_normal"/>
+
+        <RadioGroup
+            android:id="@+id/isFound"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/found"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_weight="1"
+                android:background="@drawable/selector_left_radio_btn_white_bg"
+                android:button="@null"
+                android:text="已找到房"
+                android:textSize="@dimen/font_normal"
+                android:textColor="@color/selector_radio_text_color"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:id="@+id/unFound"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_weight="1"
+                android:background="@drawable/selector_right_radio_btn_white_bg"
+                android:button="@null"
+                android:text="还在找房"
+                android:textSize="@dimen/font_normal"
+                android:gravity="center"
+                android:textColor="@color/selector_radio_text_color"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="月租金"
+            android:textSize="@dimen/font_normal"/>
+
+        <EditText
+            android:id="@+id/rent_fee_monthly"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_weight="1"
+            android:textSize="@dimen/font_normal"
+            android:background="@drawable/assess_edit_text_border"
+            android:inputType="phone"
+            android:hint="请填写月租金，如1000"
+            android:maxLength="5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rent_mode_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="交租方式"
+            android:textSize="@dimen/font_normal"/>
+
+        <Spinner
+            android:id="@+id/how_to_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_weight="1"
+            android:background="@drawable/assess_edit_text_border"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rent_budget_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_top_about_input_item"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/edit_text_title_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="租房预算"
+                android:textSize="@dimen/font_normal"/>
+
+            <Spinner
+                android:id="@+id/budget"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_weight="1"
+                android:background="@drawable/assess_edit_text_border"
+                android:entries="@array/budget"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/house_type_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_top_about_input_item"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/edit_text_title_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="户型"
+                android:textSize="@dimen/font_normal"/>
+
+            <Spinner
+                android:id="@+id/house_type"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_weight="1"
+                android:background="@drawable/assess_edit_text_border"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rent_area_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_top_per_step"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/edit_text_title_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="租房区域"
+                android:textSize="@dimen/font_normal"/>
+
+            <EditText
+                android:id="@+id/rent_area"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_weight="1"
+                android:background="@drawable/assess_edit_text_border"
+                android:maxLength="64"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="@dimen/edit_text_title_width"
+                android:layout_height="wrap_content"
+                android:text="推荐人"
+                android:textSize="@dimen/font_normal"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/introducer"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_weight="1"
+            android:background="@drawable/assess_edit_text_border"
+            android:hint="(选填)请填写推荐人手机号"
+            android:textSize="@dimen/font_normal"
+            android:inputType="phone"
+            android:maxLength="11"/>
+
+    </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/submit_button_margin_top"
+            android:background="@drawable/house"
+            android:layout_gravity="right"/>
+
+    <TextView
+        android:id="@+id/submit"
+        style="@style/CustomTextViewButton"
+        android:text="闪电评估"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_about_input_item"
+        android:layout_marginBottom="@dimen/scroll_view_submit_button_layout_margin_bottom"
+        android:gravity="left"
+        android:id="@+id/city_desc"
+        android:text=""
+        android:textColor="@color/text_light"
+        android:textSize="@dimen/font_small"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

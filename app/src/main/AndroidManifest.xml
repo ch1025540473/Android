@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wezebra.zebraking" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ui.LoadingActivity"
+            android:label="@string/app_name"
+            android:theme="@style/NoTitle" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".ui.installment.PreCalculationActivity"
+            android:label="@string/title_activity_pre_calculation" >
+        </activity>
+        <activity
+            android:name=".ui.BaseActivity"
+            android:label="@string/title_activity_base" >
+        </activity>
+        <activity
+            android:name=".ui.myaccount.PersonalInfoActivity"
+            android:label="@string/title_activity_personal_info" >
+        </activity>
+        <activity
+            android:name=".ui.myaccount.AssetActivity"
+            android:label="@string/title_activity_asset" >
+        </activity>
+        <activity
+            android:name=".ui.myaccount.ApplyActivity"
+            android:label="@string/title_activity_apply" >
+        </activity>
+        <activity
+            android:name=".ui.myaccount.RepaymentActivity"
+            android:label="@string/title_activity_repayment" >
+        </activity>
+        <activity
+            android:name=".ui.myaccount.TransactionActivity"
+            android:label="@string/title_activity_transaction_detail" >
+        </activity>
+        <activity
+            android:name=".ui.myaccount.CashActivity"
+            android:label="@string/title_activity_withdraw" >
+        </activity>
+        <activity
+            android:name=".ui.myaccount.ChargeActivity"
+            android:label="@string/title_activity_recharge" >
+        </activity>
+        <activity
+            android:name=".ui.myaccount.BankCardActivity"
+            android:label="@string/title_activity_bank_card" >
+        </activity>
+        <activity
+            android:name=".ui.login.PasswordResetActivity"
+            android:label="@string/title_activity_password_reset"
+            android:theme="@style/NoTitle" >
+        </activity>
+        <activity
+            android:name=".ui.installment.ChangeBindPhone"
+            android:label="@string/title_change_bind_name" >
+        </activity>
+        <activity
+            android:name=".ui.myaccount.TenderActivity"
+            android:label="@string/title_activity_tender" >
+        </activity>
+        <activity
+            android:name=".ui.myaccount.RepaymentDetailActivity"
+            android:label="@string/title_activity_repayment_detail" >
+        </activity>
+        <activity
+            android:name=".ui.installment.AssessActivity"
+            android:label="@string/title_activity_assess" >
+        </activity>
+        <activity
+            android:name=".ui.WebViewActivity"
+            android:label="@string/title_activity_web_view" >
+        </activity>
+        <activity
+            android:name=".ui.installment.AssessmentUnpassedActivity"
+            android:label="@string/title_activity_assessment_unpassed" >
+        </activity>
+        <activity
+            android:name=".ui.installment.AssessmentPassedActivity"
+            android:label="@string/title_activity_assessment_passed" >
+        </activity>
+        <activity
+            android:name=".ui.installment.SubmitInstallmentApplicationStepOneActivity"
+            android:label="@string/title_activity_submit_installment_application" >
+        </activity>
+        <activity
+            android:name=".ui.installment.BaseInfoStepInitialActivity"
+            android:label="@string/title_activity_base_info" >
+        </activity>
+        <activity
+            android:name=".ui.installment.BaseInfoGraduatedStepOneActivity"
+            android:label="@string/title_activity_base_info_graduated_step_one" >
+        </activity>
+        <activity
+            android:name=".ui.installment.BaseInfoGraduatedWithoutJobActivity"
+            android:label="@string/title_activity_base_info_graduated_step_two" >
+        </activity>
+        <activity
+            android:name=".ui.installment.BaseInfoGraduatedWithJobStepOneActivity"
+            android:label="@string/title_activity_base_info_graduated_with_job_step_one" >
+        </activity>
+        <activity
+            android:name=".ui.installment.BaseInfoGraduatedWithJobStepTwoActivity"
+            android:label="@string/title_activity_base_info_graduated_with_job_step_two" >
+        </activity>
+        <activity
+            android:name=".ui.installment.BaseInfoUngraduatedStepOneActivity"
+            android:label="@string/title_activity_base_info_un_graduated_step_one" >
+        </activity>
+        <activity
+            android:name=".ui.installment.BaseInfoUngraduatedStepTwoActivity"
+            android:label="@string/title_activity_base_info_ungraduated_step_two" >
+        </activity>
+        <activity
+            android:name=".ui.login.PhoneNumberActivity"
+            android:label="@string/title_activity_phone_number"
+            android:launchMode="singleTop"
+            android:theme="@style/NoTitle" >
+        </activity>
+        <activity
+            android:name=".ui.login.PasswordActivity"
+            android:label="@string/title_activity_password"
+            android:theme="@style/NoTitle" >
+        </activity>
+        <activity
+            android:name=".ui.installment.IdentificationActivity"
+            android:label="@string/title_activity_identification" >
+        </activity>
+        <activity
+            android:name=".ui.installment.BranchBankChoiceActivity"
+            android:label="选择银行支行" >
+        </activity>
+        <activity
+            android:name="com.haibison.android.lockpattern.LockPatternActivity"
+            android:label="解锁图案"
+            android:screenOrientation="portrait"
+            android:theme="@style/Alp.42447968.Theme.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name=".ui.installment.JobInfoActivity"
+            android:label="@string/title_activity_service_info" >
+        </activity>
+        <activity
+            android:name=".ui.installment.JobInfoChoiceActivity"
+            android:label="@string/title_activity_job_info" >
+        </activity>
+        <activity
+            android:name=".ui.installment.CompanyEmailAuth"
+            android:label="公司邮箱认证" >
+        </activity>
+        <activity
+            android:name=".ui.installment.SesameCreditActivity"
+            android:label="芝麻信用授权" >
+        </activity>
+        <activity
+            android:name=".ui.installment.EducationAuthActivity"
+            android:label="@string/title_activity_education_auth" >
+        </activity>
+        <activity
+            android:name=".ui.installment.IncomeAuthActivity"
+            android:label="@string/title_activity_income_auth" >
+        </activity>
+        <activity
+            android:name=".ui.installment.SocialSecurityAuthActivity"
+            android:label="@string/title_activity_social_security_auth" >
+        </activity>
+        <activity
+            android:name=".ui.installment.PublicAccFundsAuthActivity"
+            android:label="@string/title_activity_public_acc_funds_auth" >
+        </activity>
+        <activity
+            android:name=".ui.installment.ContactsAuthActivity"
+            android:label="@string/title_activity_contacts_auth" >
+        </activity>
+        <activity
+            android:name=".ui.installment.SubmitInstallmentApplicationStepTwoActivity"
+            android:label="@string/title_activity_submit_installment_application_step_two" >
+        </activity>
+        <activity
+            android:name=".ui.installment.LandlordAuthActivity"
+            android:label="@string/title_activity_landlord_auth" >
+        </activity>
+        <activity
+            android:name=".ui.installment.HouseDataAuthActivity"
+            android:label="@string/title_activity_house_data_auth" >
+        </activity>
+        <activity
+            android:name=".ui.installment.SubmitInstallmentApplicationStepThreeActivity"
+            android:label="@string/title_activity_submit" >
+        </activity>
+        <activity
+            android:name=".ui.installment.AssessCountdownActivity"
+            android:label="@string/title_activity_assess_countdown" >
+        </activity>
+        <activity
+            android:name=".ui.installment.PersonalProfileActivity"
+            android:label="@string/title_activity_personal_profile" >
+        </activity>
+        <activity
+            android:name=".ui.myaccount.AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name=".ui.myaccount.FeedbackActivity"
+            android:label="@string/title_activity_feedback" >
+        </activity>
+        <activity
+            android:name=".ui.installment.PhoneAuthStepOneActivity"
+            android:label="@string/title_activity_phone_auth" >
+        </activity>
+        <activity
+            android:name=".ui.installment.PhoneAuthStepTwoActivity"
+            android:label="@string/title_activity_phone_auth_step_two" >
+        </activity>
+        <activity
+            android:name=".ui.installment.PhoneAuthStepFourActivity"
+            android:label="@string/title_activity_phone_auth_step_three" >
+        </activity>
+        <activity
+            android:name=".ui.myaccount.ApplyDetailActivity"
+            android:label="@string/title_activity_apply_detail" >
+        </activity>
+        <activity
+            android:name=".ui.installment.SIAStepTwoResultActivity"
+            android:label="@string/title_activity_siastep_two_result" >
+        </activity>
+        <activity
+            android:name=".ui.installment.SIAStepThreeResultActivity"
+            android:label="@string/title_activity_siastep_three_result" >
+        </activity>
+        <activity
+            android:name=".ui.installment.SIAStepOneResultActivity"
+            android:label="@string/title_activity_siastep_one_result" >
+        </activity>
+        <activity
+            android:name=".ui.installment.AssessmentResultActivity"
+            android:label="@string/title_activity_assessment_result" >
+        </activity>
+        <activity
+            android:name=".ui.login.GuideActivity"
+            android:label="@string/title_activity_guide"
+            android:theme="@style/NoTitle" >
+        </activity>
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".ui.myaccount.InvestActivity"
+            android:label="@string/title_activity_invest" >
+        </activity>
+        <activity
+            android:name=".ui.installment.GrantActivity"
+            android:label="@string/title_activity_grant" >
+        </activity>
+        <activity
+            android:name=".ui.installment.PhoneAuthStepThreeActivity"
+            android:label="@string/title_activity_phone_auth_step_three" >
+        </activity>
+
+        <!-- 友盟 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="55598bea67e58e6b4700332d" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <!-- 友盟推送 -->
+
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="b45f6b6c63c558e7370ab406df9fd9e1" >
+        </meta-data>
+
+        <receiver
+            android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+            android:exported="false"
+            android:process=":push" >
+        </receiver>
+        <receiver
+            android:name="com.umeng.message.SystemReceiver"
+            android:process=":push" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.umeng.message.MessageReceiver"
+            android:process=":push" >
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.umeng.message.ElectionReceiver"
+            android:process=":push" >
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.ELECTION_RESULT_V4" />
+
+                <category android:name="umeng" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.umeng.message.RegistrationReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.wezebra.zebraking.intent.action.COMMAND" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.BootBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.umeng.message.UmengService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":push" >
+            <intent-filter>
+                <action android:name="com.wezebra.zebraking.intent.action.START" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.wezebra.zebraking.intent.action.COCKROACH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.PING_V4" />
+
+                <category android:name="umeng" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.umeng.message.UmengIntentService"
+            android:process=":push" />
+        <service
+            android:name="com.umeng.message.UmengMessageIntentReceiverService"
+            android:exported="true"
+            android:process=":push" >
+            <intent-filter>
+                <action android:name="org.android.agoo.client.MessageReceiverService" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.android.agoo.client.ElectionReceiverService" />
+            </intent-filter>
+        </service>
+
+        <!--
+        <service android:name=".util.MyPushIntentService"
+                 android:process=":push" />
+        -->
+        <!-- V1.3.0添加的service，负责下载通知的资源 -->
+        <service android:name="com.umeng.message.UmengDownloadResourceService" />
+
+        <activity
+            android:name=".ui.installment.ReFillActivity"
+            android:label="@string/title_activity_re_fill" >
+        </activity>
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:label="@string/title_activity_wxpay_entry"
+            android:launchMode="singleTop" >
+        </activity>
+        <!--
+        <activity
+            android:name=".wxapi.WxPayActivity"
+            android:exported="true"
+            android:label="@string/title_activity_wp_pay"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx2cf9392d96e23313" />
+            </intent-filter>
+        </activity>
+        -->
+
+        <receiver android:name=".wxapi.AppRegister" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+        <!-- 当多次点击listVIew的时候，如果不设置这个模式，就可能会出现多个页面 -->
+        <activity
+            android:name=".ui.myaccount.SelectPayWayActivity"
+            android:exported="true"
+            android:label="@string/title_activity_select_pay_way"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx2cf9392d96e23313" />
+            </intent-filter>
+        </activity>
+
+        <!-- 连连支付需要配置的activity -->
+        <!-- LLYT SDK START -->
+        <activity
+            android:name="com.yintong.secure.activity.BaseActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <service
+            android:name="com.yintong.secure.service.PayService"
+            android:exported="false" >
+        </service>
+        <!-- LLYT SDK END -->
+        <activity
+            android:name=".ui.myaccount.PersonLLInfoCertificate"
+            android:label="@string/title_activity_person_llinfo_certificate" />
+        <activity
+            android:name=".ui.LlPayResultActivity"
+            android:label="@string/title_activity_ll_pay_result" >
+        </activity>
+
+    </application>
+
+</manifest>

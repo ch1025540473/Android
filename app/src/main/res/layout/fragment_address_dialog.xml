@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/city_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/font_large"
+            android:text="热门城市"/>
+
+        <com.wezebra.zebraking.widget.ExpandableHeightGridView
+            android:id="@+id/city_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2">
+        </com.wezebra.zebraking.widget.ExpandableHeightGridView>
+
+        <TextView
+            android:id="@+id/province_title"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/font_large"
+            android:text="省/直辖市/自治区/特别行政区"/>
+
+        <com.wezebra.zebraking.widget.ExpandableHeightGridView
+            android:id="@+id/province_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2">
+        </com.wezebra.zebraking.widget.ExpandableHeightGridView>
+
+        <TextView
+            android:id="@+id/go_back"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/font_large"
+            android:text="返回"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

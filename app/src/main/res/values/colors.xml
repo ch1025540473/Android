@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_color">#2bb8aa</color>
+    <color name="window_bg" >#fbfbfb</color>
+    <color name="holo_blue">#FF33E5B5</color>
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent">#b0000000</color>
+    <color name="assess_activity_bg">#d4f3eb</color>
+    <color name="accentColor">#2bb8aa</color>
+    <color name="primaryColor">#2bb8aa</color>
+    <color name="primaryColorDark">#00695c</color>
+
+    <!-- 文字颜色相关 -->
+    <color name="text_white">#ffffff</color>
+    <color name="text_pink">#f47d91</color>
+    <color name="text_dark">#606366</color>
+    <color name="text_light">#a4a9b2</color>
+    <color name="text_red">#f55555</color>
+    <color name="text_green">#208d82</color>
+    <color name="text_blue">#87CEEB</color>
+    <color name="text_color_default">#de000000</color>
+    <color name="text_import_color">#f9b30b</color>
+
+    <!-- 控件配色相关 -->
+    <color name="border">#d8dade</color>
+    <color name="main_green">#6bcbca</color>
+
+    <color name="grey">#cfcfcf</color>
+    <color name="divider_grey">#cfcfcf</color>
+    <color name="dark_grey">#555669</color>
+    <color name="light_grey">#e2e2e2</color>
+    <color name="unknown_grey">#dbdbdb</color>
+    <color name="white">#ffffff</color>
+
+    <color name="light_green">#dfeae9</color>
+
+    <color name="button_green">#2bb8aa</color>
+    <color name="button_green_pressed">#cc2bb8aa</color>
+    <color name="button_green_dark">#1b635c</color>
+    <color name="button_green_dark_pressed">#aa1b635c</color>
+    <color name="button_dark">#838383</color>
+    <color name="button_dark_pressed">#cc838383</color>
+    <color name="button_blue">#87CEEB</color>
+    <color name="button_blue_pressed">#cc87CEEB</color>
+    <color name="button_blue_unenabled">#cfcfcf</color>
+
+</resources>

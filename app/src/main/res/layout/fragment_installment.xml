@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wezebra.zebraking.ui.fragment.InstallmentFragment"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <com.wezebra.zebraking.widget.BGABanner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:banner_pointAutoPlayAble="true"
+            app:banner_pointAutoPlayInterval="5000"
+            app:banner_pointContainerBackground="@android:color/transparent"
+            app:banner_pointContainerHeight="20dp"
+            app:banner_pointContainerWidth="match_parent"
+            app:banner_pointEdgeSpacing="10dp"
+            app:banner_pointFocusedImg="@drawable/point_focused"
+            app:banner_pointGravity="bottom|center_horizontal"
+            app:banner_pointSpacing="5dp"
+            app:banner_pointUnfocusedImg="@drawable/point_unfocused"
+            app:banner_pointVisibility="true"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/default_banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_banner_img"/>
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/apply_now_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/auditing_state_img"
+            android:layout_width="@dimen/state_circular_dimen"
+            android:layout_height="@dimen/state_circular_dimen"
+            android:background="@drawable/state_circular_large"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/auditing_state_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/state_circular_small"
+            android:scaleType="center"
+            android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/auditing_state_desc"
+            android:layout_width="@dimen/state_circular_dimen"
+            android:layout_height="@dimen/state_circular_dimen"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="审核中"
+            android:textSize="@dimen/font_small"
+            android:textColor="@color/text_white"
+            android:visibility="invisible"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_margin_top_per_step">
+
+            <ImageView
+                android:id="@+id/apply_anim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="30dp"
+                android:src="@drawable/apply_anim"
+                android:scaleType="center"/>
+
+            <ImageView
+                android:id="@+id/apply_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/apply_now_without_text"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/apply_now_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="立即申请"
+            android:textSize="@dimen/font_normal"
+            android:textColor="@color/text_white"
+            android:visibility="visible"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/pre_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_per_step"
+        android:layout_marginBottom="@dimen/layout_margin_top_per_step"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_gravity="bottom|right"
+        android:gravity="center"
+        android:text="@string/pre_calculation_with_hyper_link"
+        android:textColor="@color/text_green"
+        android:textSize="@dimen/font_normal"/>
+
+</LinearLayout>
